@@ -1,0 +1,76 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  }
+.navbar.scrolled {
+  background-color: transparent;
+  color:black;
+  box-shadow: none;
+  }
+  
+
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu-item {
+    margin: 0 1rem;
+  }
+  
+  .menu-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+  }
+  
+  .menu-link:hover {
+    background-color: #555;
+    color: white;
+  
+  }
+  .navbar.scrolled .menu-link{
+    color: black;
+    transition: color 0.3ms ease;
+    
+  }
+  .navbar.scrolled .menu-link:hover{
+    color: white;
+  }
+
+  section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #home {
+    background-color: #f5f5dc;
+  }
+  
+  #about {
+    background-color: #ffe4c4;
+  }
+  
+  #services {
+    background-color: #d3d3d3;
+  }
+  
+  #contact {
+    background-color: #b0c4de;
+  }
